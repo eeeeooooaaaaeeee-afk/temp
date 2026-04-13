@@ -331,49 +331,45 @@ class ServerFetchMod(loader.Module):
 
     strings = {
         "name": "ServerFetch",
-        "loading_fetch": "⌛ <b>Rendering fetch...</b>",
-        "loading_ol": "⌛ <b>Collecting system stats...</b>",
+        "loading_fetch": '<emoji document_id=5192765204898783881></emoji> <b>Rendering fetch...</b>',
+        "loading_ol": '<emoji document_id=5192765204898783881></emoji> <b>Collecting system stats...</b>',
         "fetch_missing": (
-            "⚠️ <b>Neither <code>neofetch</code> nor <code>fastfetch</code> was found.</b>\n"
+            '<emoji document_id=5192765204898783881></emoji> <b>Neither <code>neofetch</code> nor <code>fastfetch</code> was found.</b>\n'
             "<i>Ubuntu:</i> <code>sudo apt update && sudo apt install neofetch -y</code>"
         ),
-        "fetch_failed": "⚠️ <b>Failed to build fetch screenshot.</b>",
+        "fetch_failed": '<emoji document_id=5192765204898783881></emoji> <b>Failed to build fetch screenshot.</b>',
         "ol": (
-            "🖥️ <b>Overall load</b>\n\n"
-            "⚙️ <b>CPU:</b> {cpu_percent}% (<code>{cores}C/{threads}T</code>)\n"
-            "📈 <b>Load avg:</b> {loadavg}\n"
-            "🧠 <b>RAM:</b> {ram_used} / {ram_total} ({ram_percent}%)\n"
-            "💾 <b>Disk /:</b> {disk_used} / {disk_total} ({disk_percent}%)\n"
-            "⏱️ <b>Uptime:</b> {uptime}\n"
-            "🌐 <b>Host:</b> <code>{host}</code>\n"
-            "🐧 <b>OS:</b> {os_name}\n"
-            "🧩 <b>Kernel:</b> {kernel}\n"
-            "🐍 <b>Python:</b> {python}"
+            '<emoji document_id=5192765204898783881></emoji> <b>Overall load</b>\n\n'
+            '<emoji document_id=5192765204898783881></emoji> <b>CPU:</b> {cpu_percent}% (<code>{cores}C/{threads}T</code>)\n'
+            '<emoji document_id=5192765204898783881></emoji> <b>Load avg:</b> {loadavg}\n'
+            '<emoji document_id=5192765204898783881></emoji> <b>RAM:</b> {ram_used} / {ram_total} ({ram_percent}%)\n'
+            '<emoji document_id=5192765204898783881></emoji> <b>Disk /:</b> {disk_used} / {disk_total} ({disk_percent}%)\n'
+            '<emoji document_id=5192765204898783881></emoji> <b>Uptime:</b> {uptime}\n'
+            '<emoji document_id=5192765204898783881></emoji> <b>OS:</b> {os_name}\n'
+            '<emoji document_id=5192765204898783881></emoji> <b>Kernel:</b> {kernel}\n'
+            '<emoji document_id=5192765204898783881></emoji> <b>Python:</b> {python}'
         ),
-        "fetch_caption": "🖥️ <b>{title}</b>",
     }
 
     strings_ru = {
-        "loading_fetch": "⌛ <b>Рисую fetch...</b>",
-        "loading_ol": "⌛ <b>Собираю статистику...</b>",
+        "loading_fetch": '<emoji document_id=5192765204898783881></emoji> <b>Рисую fetch...</b>',
+        "loading_ol": '<emoji document_id=5192765204898783881></emoji> <b>Собираю статистику...</b>',
         "fetch_missing": (
-            "⚠️ <b>Не найден ни <code>neofetch</code>, ни <code>fastfetch</code>.</b>\n"
+            '<emoji document_id=5192765204898783881></emoji> <b>Не найден ни <code>neofetch</code>, ни <code>fastfetch</code>.</b>\n'
             "<i>Для Ubuntu:</i> <code>sudo apt update && sudo apt install neofetch -y</code>"
         ),
-        "fetch_failed": "⚠️ <b>Не удалось собрать скрин fetch.</b>",
+        "fetch_failed": '<emoji document_id=5192765204898783881></emoji> <b>Не удалось собрать скрин fetch.</b>',
         "ol": (
-            "🖥️ <b>Нагрузка сервера</b>\n\n"
-            "⚙️ <b>CPU:</b> {cpu_percent}% (<code>{cores}C/{threads}T</code>)\n"
-            "📈 <b>Load avg:</b> {loadavg}\n"
-            "🧠 <b>RAM:</b> {ram_used} / {ram_total} ({ram_percent}%)\n"
-            "💾 <b>Диск /:</b> {disk_used} / {disk_total} ({disk_percent}%)\n"
-            "⏱️ <b>Аптайм:</b> {uptime}\n"
-            "🌐 <b>Хост:</b> <code>{host}</code>\n"
-            "🐧 <b>OS:</b> {os_name}\n"
-            "🧩 <b>Ядро:</b> {kernel}\n"
-            "🐍 <b>Python:</b> {python}"
+            '<emoji document_id=5192765204898783881></emoji> <b>Нагрузка сервера</b>\n\n'
+            '<emoji document_id=5192765204898783881></emoji> <b>CPU:</b> {cpu_percent}% (<code>{cores}C/{threads}T</code>)\n'
+            '<emoji document_id=5192765204898783881></emoji> <b>Load avg:</b> {loadavg}\n'
+            '<emoji document_id=5192765204898783881></emoji> <b>RAM:</b> {ram_used} / {ram_total} ({ram_percent}%)\n'
+            '<emoji document_id=5192765204898783881></emoji> <b>Диск /:</b> {disk_used} / {disk_total} ({disk_percent}%)\n'
+            '<emoji document_id=5192765204898783881></emoji> <b>Аптайм:</b> {uptime}\n'
+            '<emoji document_id=5192765204898783881></emoji> <b>OS:</b> {os_name}\n'
+            '<emoji document_id=5192765204898783881></emoji> <b>Ядро:</b> {kernel}\n'
+            '<emoji document_id=5192765204898783881></emoji> <b>Python:</b> {python}'
         ),
-        "fetch_caption": "🖥️ <b>{title}</b>",
         "_cls_doc": "Скрин neofetch и сводка по нагрузке сервера",
         "_cmd_doc_fetch": "Отправить цветной скрин neofetch/fastfetch",
         "_cmd_doc_ol": "Показать CPU, RAM, диск и аптайм",
@@ -439,15 +435,9 @@ class ServerFetchMod(loader.Module):
             await utils.answer(status, self.strings("fetch_failed"))
             return
 
-        title = "neofetch"
-        if not shutil.which("neofetch") and shutil.which("fastfetch"):
-            title = "fastfetch"
-
         await self._client.send_file(
             message.peer_id,
             image,
-            caption=self.strings("fetch_caption").format(title=title),
-            parse_mode="HTML",
             reply_to=getattr(message, "reply_to_msg_id", None),
         )
 
@@ -471,4 +461,3 @@ class ServerFetchMod(loader.Module):
         finally:
             with contextlib.suppress(Exception):
                 await status.delete()
-
